@@ -1,0 +1,6 @@
+[2025-07-19 06:06:05] T02: CM5 LED Visual Check - PASS - Duration: 15s
+[2025-07-19 06:06:06] T03: RGB LED Visual Check - PASS - Duration: 1s
+[2025-07-19 06:06:07] T04: E-ink Display Refresh - PASS - Duration: 1s
+[2025-07-19 06:06:48] T05: UI Appears - PASS - Duration: 41s
+[2025-07-19 06:07:01] T06: Button Response - PASS - Duration: 12s
+[2025-07-19 06:07:13] T07: Voice Transcribed - PASS - Duration: 12s

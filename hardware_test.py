@@ -857,7 +857,7 @@ def main():
                 
                 # T04: E-ink Display
                 if 'T04' in test_result.tests_to_run:
-                    result, duration = get_yes_no_input("Does the e-ink display refresh?")
+                    result, duration = get_yes_no_input("Does the e-ink bootup screen appear?")
                     if result is None:
                         restart_test = True
                         save_to_excel(test_result)
@@ -872,7 +872,7 @@ def main():
                 # T05: UI Appears
                 ui_appears = False
                 if 'T05' in test_result.tests_to_run:
-                    result, duration = get_yes_no_input("Wait for UI to show up. Does the UI appear?")
+                    result, duration = get_yes_no_input("Wait for WIFI UI to show up. Does the WIFI UI appear?")
                     if result is None:
                         restart_test = True
                         save_to_excel(test_result)
@@ -884,25 +884,25 @@ def main():
                 if ui_appears or 'T05' not in test_result.tests_to_run:
                     # T06: Button Response
                     if 'T06' in test_result.tests_to_run:
-                        result, duration = get_yes_no_input("Press a button. Does the UI move when button pressed?")
+                        result, duration = get_yes_no_input("Press a button. Does the button show on dmesg?")
                         if result is None:
                             restart_test = True
                             save_to_excel(test_result)
                             continue
                         test_result.set_test_result('T06', result, "", duration)
                     
-                    # Only show instructions if we have voice tests
-                    if 'T07' in test_result.tests_to_run:
-                        print("\nInstructions:")
-                        print("1. Go to 'select server' button and select 'medical assistant server'")
-                        print("2. Wait for cache restoration")
-                        print("3. If you see 'failed to connect', reload the page")
-                        wait_for_enter("")
+                    # # Only show instructions if we have voice tests
+                    # if 'T07' in test_result.tests_to_run:
+                    #     print("\nInstructions:")
+                    #     print("1. Go to 'select server' button and select 'medical assistant server'")
+                    #     print("2. Wait for cache restoration")
+                    #     print("3. If you see 'failed to connect', reload the page")
+                    #     wait_for_enter("")
                     
                     # T07: Voice Transcribed
                     voice_transcribed = False
                     if 'T07' in test_result.tests_to_run:
-                        print("\nPress audio record and speak a test message.")
+                        print("Use Piper to perform audio record and speak a test message.")
                         result, duration = get_yes_no_input("Was your voice successfully transcribed?")
                         if result is None:
                             restart_test = True
