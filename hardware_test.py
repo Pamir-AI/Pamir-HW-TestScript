@@ -35,14 +35,14 @@ CameraHandler = None
 #     CameraHandler = None
 
 # Configuration Constants
-CM5_IP_ADDRESS = "distiller@192.168.0.105"
+CM5_IP_ADDRESS = "distiller@192.168.0.30"
 CM5_PASSWORD = "one"
 EXCEL_FILE = "hardware_test_results.xlsx"
-RGB_LED_TEST_PATH = "/home/distiller/distiller-cm5-sdk/src/distiller_cm5_sdk/hardware/sam/led_interactive_demo.py"
-RGB_LED_NUM_ENTERS = 10  # Number of Enter presses needed for the RGB LED interactive program
+RGB_LED_TEST_PATH = "/opt/distiller-cm5-sdk/src/distiller_cm5_sdk/hardware/sam/led_interactive_demo.py"
+RGB_LED_NUM_ENTERS = 1  # Number of Enter presses needed for the RGB LED interactive program
 
 # UF2 Configuration (from upload.py)
-UF2_DIRECTORY = "/Users/chengmingzhang/CodingProjects/Software/Distiller-SAM-Firmware/ULP"
+UF2_DIRECTORY = "ULP"
 VOLUME_PATHS = ["/Volumes/RPI-RP2 1", "/Volumes/RPI-RP2"]
 UART_PORT_PATTERN = "/dev/tty.usb*"
 FLASH_NUKE_UF2 = "flash_nuke.uf2"
