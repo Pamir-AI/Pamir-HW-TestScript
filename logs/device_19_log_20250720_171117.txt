@@ -1,0 +1,5 @@
+[2025-07-20 17:13:03] T01: Firmware Upload - PASS - Duration: 104s - All files uploaded successfully
+[2025-07-20 17:14:30] T02: CM5 LED Visual Check - PASS - Duration: 0s
+[2025-07-20 17:14:30] T03: RGB LED Visual Check - PASS - Duration: 0s
+[2025-07-20 17:14:31] T04: E-ink Display Refresh - PASS - Duration: 0s
+[2025-07-20 17:14:32] T05: UI Appears - PASS - Duration: 0s
