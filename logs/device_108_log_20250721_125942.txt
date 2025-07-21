@@ -1,0 +1,8 @@
+[2025-07-21 12:59:44] T09: USB MicroPython Detection - PASS - Duration: 1s - lsusb output: Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 001: ID 1d6b:0003 Linu...
+[2025-07-21 12:59:44] T10: USB Hub Detection - PASS - Duration: 0s
+[2025-07-21 12:59:44] T11: USB Media Detection - PASS - Duration: 0s
+[2025-07-21 12:59:46] T13: SD Card Detection - PASS - Duration: 1s - lsblk output: NAME         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda            8:0    1 119.1G  0 disk 
+├─sda1   ...
+[2025-07-21 12:59:46] T14: Camera Detection - FAIL - Duration: 0s - [0:04:05.778622672] [1361] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0

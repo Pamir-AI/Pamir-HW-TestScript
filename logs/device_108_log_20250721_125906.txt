@@ -1,0 +1,2 @@
+[2025-07-21 12:59:14] T06: Button Response - PASS - Duration: 5s
+[2025-07-21 12:59:15] T14: Camera Detection - FAIL - Duration: 0s - [0:03:35.132600240] [1320] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0
