@@ -1,0 +1,1 @@
+[2025-07-21 03:47:30] T01: Firmware Upload - FAIL - Duration: 16s - No UART port found
