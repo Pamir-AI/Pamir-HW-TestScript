@@ -1,0 +1,16 @@
+[2025-07-20 21:17:50] T01: Firmware Upload - PASS - Duration: 106s - All files uploaded successfully
+[2025-07-20 21:18:26] T02: CM5 LED Visual Check - PASS - Duration: 4s
+[2025-07-20 21:18:27] T03: RGB LED Visual Check - PASS - Duration: 0s
+[2025-07-20 21:18:28] T04: E-ink Display Refresh - PASS - Duration: 1s
+[2025-07-20 21:22:24] T05: UI Appears - PASS - Duration: 235s
+[2025-07-20 21:28:14] T06: Button Response - PASS - Duration: 350s
+[2025-07-20 21:28:18] T07: Voice Transcribed - PASS - Duration: 4s
+[2025-07-20 21:28:20] T09: USB MicroPython Detection - PASS - Duration: 1s - lsusb output: Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 001: ID 1d6b:0003 Linu...
+[2025-07-20 21:28:20] T10: USB Hub Detection - PASS - Duration: 0s
+[2025-07-20 21:28:20] T11: USB Media Detection - PASS - Duration: 0s
+[2025-07-20 21:28:31] T12: RGB LED SSH Test - PASS - Duration: 11s
+[2025-07-20 21:28:32] T13: SD Card Detection - PASS - Duration: 1s - lsblk output: NAME         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda            8:0    1 119.1G  0 disk 
+├─sda1   ...
+[2025-07-20 21:28:38] T14: Camera Detection - PASS - Duration: 5s - [0:07:20.573032532] [2622] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0

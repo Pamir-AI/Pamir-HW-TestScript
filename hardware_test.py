@@ -39,7 +39,7 @@ CM5_IP_ADDRESS = "distiller@192.168.0.30"
 CM5_PASSWORD = "one"
 EXCEL_FILE = "hardware_test_results.xlsx"
 RGB_LED_TEST_PATH = "/opt/distiller-cm5-sdk/src/distiller_cm5_sdk/hardware/sam/led_interactive_demo.py"
-RGB_LED_NUM_ENTERS = 1  # Number of Enter presses needed for the RGB LED interactive program
+RGB_LED_NUM_ENTERS = 10  # Number of Enter presses needed for the RGB LED interactive program
 
 # UF2 Configuration (from upload.py)
 UF2_DIRECTORY = "ULP"
@@ -493,6 +493,7 @@ def perform_ssh_tests(test_result):
         # T09: USB MicroPython
         if 'T09' in test_result.tests_to_run:
             start_time = time.time()
+            time.sleep(1)
             usb_micropython = "MicroPython Board in FS mode" in output
             duration = int(time.time() - start_time)
             test_result.set_test_result('T09', usb_micropython, f"lsusb output: {output[:100]}...", duration)
@@ -549,10 +550,13 @@ def perform_ssh_tests(test_result):
                 total_duration = int(time.time() - start_time)
                 test_result.set_test_result('T12', rgb_led_result, "", total_duration)
         
+        
+        
         # Test 3: Check SD card
         if 'T13' in test_result.tests_to_run:
             print("\nChecking SD card...")
             start_time = time.time()
+            time.sleep(1)
             output, error = ssh_execute_command(ssh, "lsblk")
             
             # Reconnect if needed
